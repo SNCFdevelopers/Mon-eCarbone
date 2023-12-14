@@ -3,7 +3,7 @@
 
 ## Solutions nécessaires et objets liés
 
-### Numérique responsable – Table :
+### Numérique responsable – Tables :
 
 - Challenges: Données liées aux différents challenges créés.
 - Company variables: Données liées à la personnalisation des différents liens et visuels.
