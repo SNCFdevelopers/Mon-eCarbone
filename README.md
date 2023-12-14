@@ -65,7 +65,6 @@ Références de connexions :
 
 Applications:
 - GestionImageEvolutionProfil: Application de gestion de la table EvolutionProfil.
-- JsonNotifTeamsV1: ???
 - Mon e-Carbone: Application principale.
 - Plateforme d'administration mon e-carbone: Application de gestion des challenges.
 
