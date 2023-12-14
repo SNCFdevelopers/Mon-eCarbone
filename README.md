@@ -1,39 +1,41 @@
 # Mon-eCarbone
 
+[Vidéo de présentation de l'application Mon e-Carbone](https://www.linkedin.com/posts/sncfnumerique_office365-pournoustous-sedd2023-activity-7115729485965979648-u0km?utm_source=share&utm_medium=member_desktop)
+
 
 ## Solutions nécessaires et objets liés
 
 ### Numérique responsable – Tables :
 
-- Challenges: Données liées aux différents challenges créés.
-- Company variables: Données liées à la personnalisation des différents liens et visuels.
-- DataReference: Données d'équivalences carbone des outils collaborateurs.
-- DetailMailBox: Données créées pour chaque nouvel utilisateur contenant des informations de type poids et espaces Outlook.
-- Doublons: Stocke les doublons présents sur le drive de l'utilisateur afin de faciliter leur gestion.
-- EvolutionProfil: Données inhérentes aux niveaux disponibles.
-- FichiersVolumineux: Stocke les informations des fichiers volumineux.
-- habitudeImpressions: Données sur les impressions.
-- MailingList: Données liées à la personnalisation des catégories de mails.
-- notif_teams: Données choix de notifications teams.
-- ProductionCO2Equipe: Données de chaque équipe (code RG).
-- Profils: Données d'utilisateurs.
-- TBL_Participants: Données des participants inscrits aux challenges.
-- TmpDirectoryList: Table temporaire pour l’exécution des algorithmes OneDrive.
-- TmpFilesList: Table temporaire pour l’exécution des algorithmes OneDrive.
+- Challenges : Données liées aux différents challenges créés.
+- Company variables : Données liées à la personnalisation des différents liens et visuels.
+- DataReference : Données d'équivalences carbone des outils collaborateurs.
+- DetailMailBox : Données créées pour chaque nouvel utilisateur contenant des informations de type poids et espaces Outlook.
+- Doublons : Stocke les doublons présents sur le drive de l'utilisateur afin de faciliter leur gestion.
+- EvolutionProfil : Données inhérentes aux niveaux disponibles.
+- FichiersVolumineux : Stocke les informations des fichiers volumineux.
+- habitudeImpressions : Données sur les impressions.
+- MailingList : Données liées à la personnalisation des catégories de mails.
+- notif_teams : Données choix de notifications teams.
+- ProductionCO2Equipe : Données de chaque équipe (code RG).
+- Profils : Données d'utilisateurs.
+- TBL_Participants : Données des participants inscrits aux challenges.
+- TmpDirectoryList : Table temporaire pour l’exécution des algorithmes OneDrive.
+- TmpFilesList : Table temporaire pour l’exécution des algorithmes OneDrive.
 
 ### Numérique responsable - Variables d'environnement
 
 ### Numérique responsable - Custom Connectors :
 
-- GraphAPI-GetMyDrive-1: connecteur personnalisé GraphAPI permettant d'établir une connexion directe avec Microsoft Graph, l'API unifiée de Microsoft pour accéder aux données et aux services de OneDrive.
-- Microsoft Graph API-1: connecteur personnalisé GraphAPI permettant d'établir une connexion directe avec Microsoft Graph, l'API unifiée de Microsoft pour accéder aux données et aux services de Outlook.
+- GraphAPI-GetMyDrive-1 : connecteur personnalisé GraphAPI permettant d'établir une connexion directe avec Microsoft Graph, l'API unifiée de Microsoft pour accéder aux données et aux services de OneDrive.
+- Microsoft Graph API-1 : connecteur personnalisé GraphAPI permettant d'établir une connexion directe avec Microsoft Graph, l'API unifiée de Microsoft pour accéder aux données et aux services de Outlook.
 
 ### Numérique responsable - Flux :
 
 Flux:
 - Analyse One Drive : Collecter les données OneDrive de l'utilisateur.
 - BtnApiGraph : Collecter les mails de l'utilisateur en fonction de leurs poids
-- BtnApiGraph-Date :Collecter les mails de l'utilisateur en fonction de leurs dates de reception
+- BtnApiGraph-Date : Collecter les mails de l'utilisateur en fonction de leurs dates de reception
 - BtnApiGraph-Date-Sender : Collecter les mails de l'utilisateur en fonction de leurs dates d'envoi
 - BtnApiGraph-Notif : Collecter et classer les mails de type notifications
 - BtnApiGraph-Sender : Collecter les mails envoyés en fonction de leurs poids
@@ -53,9 +55,9 @@ Flux:
 - Volumineux-AnalyseOneDrive : Gérer la récupération des documents OneDrive en fonction de leurs poids
 
 Références de connexions :
-- GraphAPI-GetMyDrive - 1 NumriqueresponsableFlux-ae997: connexion à l'API GRAPH pour OneDrive.
-- Microsoft Dataverse NumriqueresponsableFlux-fdaa6 : connexion à Dataverse
-- Microsoft Graph API - 1 NumriqueresponsableFlux-f2220 : connexion à l'APIGRAPH pour Outlook
+- GraphAPI-GetMyDrive - 1 : connexion à l'API GRAPH pour OneDrive.
+- Microsoft Dataverse : connexion à Dataverse
+- Microsoft Graph API - 1 : connexion à l'APIGRAPH pour Outlook
 - Office 365 Outlook NumriqueresponsableFlux-4967f : connexion à Office365
 - OneDrive Entreprise NumriqueresponsableFlux-0b21b : connexion au OneDrive Entreprise
 - SharePoint NumriqueresponsableFlux-246d2 : connexion aux sharepoint entreprise
@@ -64,17 +66,17 @@ Références de connexions :
 ### Numérique Responsable :
 
 Applications:
-- GestionImageEvolutionProfil: Application de gestion de la table EvolutionProfil.
-- Mon e-Carbone: Application principale.
-- Plateforme d'administration mon e-carbone: Application de gestion des challenges.
+- GestionImageEvolutionProfil : Application de gestion de la table EvolutionProfil.
+- Mon e-Carbone : Application principale.
+- Plateforme d'administration mon e-carbone : Application de gestion des challenges.
 
 Rôles de sécurité:
-- AdministrateurMone-Carbone: Rôle d'administration des applications.
-- UtilisateurMone-carbone: Rôle d'utilisateur de l'application Mon E-carbone.
+- AdministrateurMone-Carbone : Rôle d'administration des applications.
+- UtilisateurMone-carbone : Rôle d'utilisateur de l'application Mon E-carbone.
 
 ### Ordre de déploiement des solutions :
 
-1. Numérique responsable - Table.
+1. Numérique responsable - Tables.
 2. Numérique responsable - Variables d'environnement.
 3. Créer une application côté Azure: [Lien vers la documentation Microsoft](https://learn.microsoft.com/fr-fr/entra/identity-platform/quickstart-register-app).
 4. Numérique responsable - Custom Connectors: Modifier les custom connectors pour ajouter le Client ID et le Secret ID. Actualiser l'application Azure avec l'adresse de retour. Créer les références de connexion.
