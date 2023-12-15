@@ -2,7 +2,7 @@
 
 [Vidéo de présentation de l'application Mon e-Carbone](https://www.linkedin.com/posts/sncfnumerique_office365-pournoustous-sedd2023-activity-7115729485965979648-u0km?utm_source=share&utm_medium=member_desktop)
 
-Mon e.Carbone  a pour objectif de donner à chaque collaborateur les leviers pour agir sur son empreinte carbone numérique. Au délà du bilan carbone informatique par collaborateur, l'application permet un premier ménage immédiat dans les mails et les documents OneDrive via une connexion directe à Microsoft O365. 
+Mon e.Carbone  a pour objectif de donner à chaque collaborateur les leviers pour agir sur son empreinte carbone numérique. Au délà du bilan carbone informatique par collaborateur, l'application permet un premier ménage immédiat dans les mails et les documents OneDrive via une connexion directe à Microsoft O365.  
 Cette application de sensibilisation et de mise en œuvre des premiers écogestes doit s’inscrire dans une politique numérique responsable complète pour être la plus efficace possible.
 ## Solutions nécessaires et objets liés
 
