@@ -35,33 +35,33 @@ Cette application de sensibilisation et de mise en œuvre des premiers écogeste
 
 Flux:
 - Analyse One Drive : Collecter les données OneDrive de l'utilisateur.
-- BtnApiGraph : Collecter les mails de l'utilisateur en fonction de leurs poids
-- BtnApiGraph-Date : Collecter les mails de l'utilisateur en fonction de leurs dates de reception
-- BtnApiGraph-Date-Sender : Collecter les mails de l'utilisateur en fonction de leurs dates d'envoi
-- BtnApiGraph-Notif : Collecter et classer les mails de type notifications
-- BtnApiGraph-Sender : Collecter les mails envoyés en fonction de leurs poids
-- Btn-Delete-AllNotifications : Supprimer les mails catégorisés comme notifications
-- Btn-GetNbNotifications : Collecter les notifications d'acceptation et de refus
-- ChargementEquipe : Collecter des données de suppression OneDrive et Outlook des utilisateurs d'une même équipe
-- DeleteDocOneDrive : Récupérer les documents Onedrive, leurs poids et de les supprimer
-- DeleteMails : Récupérer les mails, leurs poids et de les supprimer
-- Envoi_notifications_teams : Gérer l'envoi d'une notification de résultat d'analyse
-- EnvoiRappelUtilisateur : Gérer l'envoi d'une notification de fin de challenge en fonction du choix de l'utilisateur
-- ExportExcel : Exporter SharePoint des statistiques de toutes les equipes 
-- GetOneDriveSize : Récuperer les données OneDrive de l'utilisateur
-- HistoriqueProfil : Récupeer les données CO2 de du profil de l'utilisateur
-- Notif_Fin_Challenge : Gérer l'envoi d'une notification prévenant de la fin d'un challenge
-- Notif_teams_Challenge : Gérer l'envoi d'une notification de l'inscription à un challenge
-- PurgeTmpOneDrive : Gérer la colonne de liste des fichiers temporaires de l'utilisateur une fois par mois
-- Volumineux-AnalyseOneDrive : Gérer la récupération des documents OneDrive en fonction de leurs poids
+- BtnApiGraph : Collecter les mails de l'utilisateur en fonction de leurs poids.
+- BtnApiGraph-Date : Collecter les mails de l'utilisateur en fonction de leurs dates de reception.
+- BtnApiGraph-Date-Sender : Collecter les mails de l'utilisateur en fonction de leurs dates d'envoi.
+- BtnApiGraph-Notif : Collecter et classer les mails de type notifications.
+- BtnApiGraph-Sender : Collecter les mails envoyés en fonction de leurs poids.
+- Btn-Delete-AllNotifications : Supprimer les mails catégorisés comme notifications.
+- Btn-GetNbNotifications : Collecter les notifications d'acceptation et de refus.
+- ChargementEquipe : Collecter des données de suppression OneDrive et Outlook des utilisateurs d'une même équipe.
+- DeleteDocOneDrive : Récupérer les documents Onedrive, leurs poids et de les supprimer.
+- DeleteMails : Récupérer les mails, leurs poids et de les supprimer.
+- Envoi_notifications_teams : Gérer l'envoi d'une notification de résultat d'analyse.
+- EnvoiRappelUtilisateur : Gérer l'envoi d'une notification de fin de challenge en fonction du choix de l'utilisateur.
+- ExportExcel : Exporter SharePoint des statistiques de toutes les equipes.
+- GetOneDriveSize : Récuperer les données OneDrive de l'utilisateur.
+- HistoriqueProfil : Récupeer les données CO2 de du profil de l'utilisateur.
+- Notif_Fin_Challenge : Gérer l'envoi d'une notification prévenant de la fin d'un challenge.
+- Notif_teams_Challenge : Gérer l'envoi d'une notification de l'inscription à un challenge.
+- PurgeTmpOneDrive : Gérer la colonne de liste des fichiers temporaires de l'utilisateur une fois par mois.
+- Volumineux-AnalyseOneDrive : Gérer la récupération des documents OneDrive en fonction de leurs poids.
 
 Références de connexions :
 - GraphAPI-GetMyDrive - 1 : connexion à l'API GRAPH pour OneDrive.
-- Microsoft Dataverse : connexion à Dataverse
-- Microsoft Graph API - 1 : connexion à l'APIGRAPH pour Outlook
-- Office 365 Outlook NumriqueresponsableFlux-4967f : connexion à Office365
-- OneDrive Entreprise NumriqueresponsableFlux-0b21b : connexion au OneDrive Entreprise
-- SharePoint NumriqueresponsableFlux-246d2 : connexion aux sharepoint entreprise
+- Microsoft Dataverse : connexion à Dataverse.
+- Microsoft Graph API - 1 : connexion à l'APIGRAPH pour Outlook.
+- Office 365 Outlook NumriqueresponsableFlux-4967f : connexion à Office365.
+- OneDrive Entreprise NumriqueresponsableFlux-0b21b : connexion au OneDrive Entreprise.
+- SharePoint NumriqueresponsableFlux-246d2 : connexion aux sharepoint entreprise.
 
 
 ### Numérique Responsable :
