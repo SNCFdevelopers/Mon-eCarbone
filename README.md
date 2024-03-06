@@ -5,7 +5,7 @@
 Mon e.Carbone  a pour objectif de donner à chaque collaborateur les leviers pour agir sur son empreinte carbone numérique. Au délà du bilan carbone informatique par collaborateur, l'application permet un premier ménage immédiat dans les mails et les documents OneDrive via une connexion directe à Microsoft O365.  
 Cette application de sensibilisation et de mise en œuvre des premiers écogestes doit s’inscrire dans une politique numérique responsable complète pour être la plus efficace possible.
 ## Solutions nécessaires et objets liés
-
+L'utilisation de l'application nécessite une license PowerApp Pro avec accès Dataverse pour chaque utilisateur.
 ### Numérique responsable – Tables :
 
 - Challenges : Données liées aux différents challenges créés.
