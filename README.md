@@ -1,6 +1,6 @@
 # Mon-eCarbone
 
-Vidéo de présentation de l'application Mon e-Carbone : [Publier | LinkedIn](https://www.linkedin.com)
+Vidéo de présentation de l'application Mon e-Carbone : [LinkedIn](https://www.linkedin.com)
 
 Mon e.Carbone a pour objectif de donner à chaque collaborateur les leviers pour agir sur son empreinte carbone numérique. Au-delà du bilan carbone informatique par collaborateur, l'application permet un premier ménage immédiat dans les mails et les documents OneDrive via une connexion directe à Microsoft O365.
 
