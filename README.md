@@ -13,7 +13,8 @@ L'utilisation de l'application nécessite une licence PowerApp Pro avec accès D
 ### 1. Les solutions et leurs contenus
 
 #### Numérique responsable – Tables :
-
+- **Badges** : Données liées aux différents badges.
+- **Collected Badges** : Stocke les badges débloqués par les utilisateurs.
 - **Challenges** : Données liées aux différents challenges créés.
 - **Company variables** : Données liées à la personnalisation des différents liens et visuels.
 - **DataReference** : Données d'équivalences carbone des outils collaborateurs.
@@ -21,11 +22,12 @@ L'utilisation de l'application nécessite une licence PowerApp Pro avec accès D
 - **Doublons** : Stocke les doublons présents sur le drive de l'utilisateur afin de faciliter leur gestion.
 - **EvolutionProfil** : Données inhérentes aux niveaux disponibles.
 - **FichiersVolumineux** : Stocke les informations des fichiers volumineux.
-- **habitudeImpressions** : Données sur les impressions.
 - **MailingList** : Données liées à la personnalisation des catégories de mails.
 - **notif_teams** : Données choix de notifications teams.
 - **ProductionCO2Equipe** : Données de chaque équipe (code RG).
 - **Profils** : Données d'utilisateurs.
+- **Saisie_Particpants** : Données liées aux challenges.
+- **TBL_CSVParticipants** : Table de stockage des listes de participants.
 - **TBL_Participants** : Données des participants inscrits aux
 - **TmpDirectoryList** : Table temporaire pour l’exécution des algorithmes OneDrive. 
 - **TmpFilesList** : Table temporaire pour l’exécution des algorithmes OneDrive. 
@@ -39,16 +41,19 @@ L'utilisation de l'application nécessite une licence PowerApp Pro avec accès D
 - **var_carbone_mail** : contient le mail de contact utilisateurs. 
 - **var_ecarbone_secret** : contient le secret de l’application Azure.
 - **var_ecarbone_teamsApps** : contient le lien. 
-- **var_ecarbone_tenantId** : contient le tenant de L’application. 
-- **Var_teamsApps_masuperapp.
-- **Var_tenant_masuperapp.
+- **var_ecarbone_tenantId** : contient le tenant de L’application.
+- **Var_ecarbone_url_access_token** : contient le token d'accès. 
+- **Var_teamsApps_masuperapp**.
+- **Var_tenant_masuperapp**.
 
 #### Numérique responsable - Custom Connectors : 
 
 - **GraphAPI-GetMyDrive-1** : connecteur personnalisé GraphAPI permettant d'établir une connexion directe avec Microsoft Graph, l'API unifiée de Microsoft pour accéder aux données et aux services de OneDrive. 
 - **Microsoft Graph API-1** : connecteur personnalisé GraphAPI permettant d'établir une connexion directe avec Microsoft Graph, l'API unifiée de Microsoft pour accéder aux données et aux services de Outlook.
 
-#### Numérique responsable - Flux : 
+#### Numérique responsable : 
+
+##### - Références de connexions : 
 
 - **Analyse One Drive** : Collecter les données OneDrive de l'utilisateur. 
 - **BtnApiGraph** : Collecter les mails de l'utilisateur en fonction de leurs poids. 
@@ -57,21 +62,25 @@ L'utilisation de l'application nécessite une licence PowerApp Pro avec accès D
 - **BtnApiGraph-Notif** : Collecter et classer les mails de type notifications. 
 - **BtnApiGraph-Sender** : Collecter les mails envoyés en fonction de leurs poids. 
 - **Btn-Delete-AllNotifications** : Supprimer les mails catégorisés comme notifications. 
-- **Btn-GetNbNotifications** : Collecter les notifications d'acceptation et de refus. 
+- **Btn-GetNbNotifications** : Collecter les notifications d'acceptation et de refus.
+- **Btn-ImportFile** : Importer une liste CSV de participants à un challenge.
+- **CalculOneDrive** : Calculer l'espace Onedrive du participant à un challenge.
 - **ChargementEquipe** : Collecter des données de suppression OneDrive et Outlook des utilisateurs d'une même équipe. 
-- **DeleteDocOneDrive** : Récupérer les documents Onedrive, leurs poids et de les supprimer. 
-- **DeleteMails** : Récupérer les mails, leurs poids et de les supprimer. 
+- **DeleteDocOneDriveV2** : Récupérer les documents Onedrive, leurs poids et de les supprimer. 
+- **DeleteMailsV2** : Récupérer les mails, leurs poids et de les supprimer. 
 - **Envoi_notifications_teams** : Gérer l'envoi d'une notification de résultat d'analyse. 
 - **EnvoiRappelUtilisateur** : Gérer l'envoi d'une notification de fin de challenge en fonction du choix de l'utilisateur. 
 - **ExportExcel** : Exporter SharePoint des statistiques de toutes les équipes. 
-- **GetOneDriveSize** : Récupérer les données OneDrive de l'utilisateur. 
+- **GetOneDriveSizeV2** : Récupérer les données OneDrive de l'utilisateur.
+- **GetOutlookSizeV2** : Récupérer les données Outlook de l'utilisateur.
+- **GetUserProfil** : Récupérer le profil de l'organisateur d'un challenge. 
 - **HistoriqueProfil** : Récupérer les données CO2 de du profil de l'utilisateur. 
 - **Notif_Fin_Challenge** : Gérer l'envoi d'une notification prévenant de la fin d'un challenge. 
 - **Notif_teams_Challenge** : Gérer l'envoi d'une notification de l'inscription à un challenge. 
 - **PurgeTmpOneDrive** : Gérer la colonne de liste des fichiers temporaires de l'utilisateur une fois par mois. 
 - **Volumineux-AnalyseOneDrive** : Gérer la récupération des documents OneDrive en fonction de leurs poids.
 
-#### Numérique responsable - Références de connexions : 
+##### - Références de connexions : 
 
 - **GraphAPI-GetMyDrive - 1** : connexion à l'API GRAPH pour OneDrive. 
 - **Microsoft Dataverse** : connexion à Dataverse. 
@@ -80,9 +89,10 @@ L'utilisation de l'application nécessite une licence PowerApp Pro avec accès D
 - **OneDrive Entreprise NumriqueresponsableFlux-0b21b** : connexion au OneDrive Entreprise. 
 - **SharePoint NumriqueresponsableFlux-246d2** : connexion aux sharepoint entreprise. 
 
-#### Numérique Responsable : 
+##### - Applications : 
 
-- **GestionImageEvolutionProfil** : Application de gestion de la table EvolutionProfil. 
+- **GestionImageEvolutionProfil** : Application de gestion de la table EvolutionProfil.
+- **GestionImageBadge** : Applcation de gestion de la table Badges. 
 - **Mon e-Carbone** : Application principale. 
 - **Plateforme d'administration mon e-carbone** : Application de gestion des challenges et référentiel.
 
@@ -103,17 +113,7 @@ L’application Azure permet l’appel de plusieurs ressources de la GRAPH API :
 - Récupération de la taille des courriels / boite courriels de l’utilisateur 
 - Récupération de la taille du OneDrive de l’utilisateur 
 - Notification Teams 
-
-La liste des droits à affecter à l’application une fois créer : 
-
  
-
- 
-
- 
-
- 
-
 L’ensemble des éléments d’authentification sont à actualisé dans les variables d’environnement : 
 **Solution : Numérique responsable - Variables d'environnement**
 - Locataire : var_ecarbone_tenantId (ID du tenant Microsoft de votre entreprise) - Audience : var_ecarbone_audience (https://orgXXXX.crm.dynamics.com) 
@@ -137,13 +137,13 @@ Actualiser l'application Azure avec l'adresse de retour.
 
 #### 5.Créer les références de connexion 
 
-#### 6.Numérique responsable - Flux 
+#### 6.Numérique responsable 
 
 **!! Il est obligatoire d’avoir importé l’application des customs connectors et de créer et paramétrer l’application azure pour importer la solution des flux.** 
 **!! Le flux btnApiGraph contient la variable var_ecarbone_mail (permettant le contact des utilisateurs avec le SAV de l’app) à modifier.** 
 
 Les flux présents dans cette solution emploient vos variables d’environnement mises à jour précédemment. Tester chaque flux pour vérifier qu’elles soient toutes à jour. 
 
-#### 7.Numérique Responsable 
 
-Installer la solution 
+
+
