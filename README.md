@@ -137,7 +137,7 @@ Actualiser l'application Azure avec l'adresse de retour.
 
 #### 5.Créer les références de connexion 
 
-#### 6.Numérique responsable 
+#### 6.Numérique responsable - Applications
 
 **!! Il est obligatoire d’avoir importé l’application des customs connectors et de créer et paramétrer l’application azure pour importer la solution des flux.** 
 **!! Le flux btnApiGraph contient la variable var_ecarbone_mail (permettant le contact des utilisateurs avec le SAV de l’app) à modifier.** 
