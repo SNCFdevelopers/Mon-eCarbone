@@ -51,7 +51,7 @@ L'utilisation de l'application nécessite une licence PowerApp Pro avec accès D
 - **GraphAPI-GetMyDrive-1** : connecteur personnalisé GraphAPI permettant d'établir une connexion directe avec Microsoft Graph, l'API unifiée de Microsoft pour accéder aux données et aux services de OneDrive. 
 - **Microsoft Graph API-1** : connecteur personnalisé GraphAPI permettant d'établir une connexion directe avec Microsoft Graph, l'API unifiée de Microsoft pour accéder aux données et aux services de Outlook.
 
-#### Numérique responsable : 
+#### Numérique responsable - Applications: 
 
 ##### - Références de connexions : 
 
